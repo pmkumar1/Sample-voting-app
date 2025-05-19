@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: voting-app-deploy
@@ -10,7 +10,7 @@ spec:
   selector: 
     matchLabels:
       app: demo-voting-app
-      name: voting-app-deploy
+      name: voting-app-pod
   template:
     metadata:
       name: voting-app-pod
